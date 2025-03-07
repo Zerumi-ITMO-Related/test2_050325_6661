@@ -58,4 +58,6 @@ fun main() {
     generateCsv("prog_out/log_3.csv", ::log_3, 0.1, 0.25, 10)
     generateCsv("prog_out/log_5.csv", ::log_5, 0.1, 0.25, 10)
     generateCsv("prog_out/log_10.csv", ::log_10, 0.1, 0.25, 10)
+    generateCsv("prog_out/f-small.csv", ::f, -1.0, 0.1, 20)
+    generateCsv("prog_out/f-large.csv", ::f, -10.0, 0.5, 40)
 }
