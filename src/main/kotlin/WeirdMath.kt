@@ -3,14 +3,13 @@ package io.github.zerumi
 import java.io.File
 import kotlin.math.PI
 import kotlin.math.pow
-import kotlin.math.sqrt
 
 fun sin(x: Double) = (-(x % (2 * PI)) + PI).run {
     this - this.pow(3) / (3 * 2 * 1) + this.pow(5) / (5 * 4 * 3 * 2 * 1) -
             this.pow(7) / (7 * 6 * 5 * 4 * 3 * 2 * 1) + this.pow(9) / (9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1)
 }
 
-fun cos(x: Double) = sqrt(1.0 - sin(x).pow(2))
+fun cos(x: Double) = sin(PI / 2 - x)
 
 fun tan(x: Double) = sin(x) / cos(x)
 
