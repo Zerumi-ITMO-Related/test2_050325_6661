@@ -1,0 +1,4 @@
+input,cosValue,expected
+0.0,1.0,1.0
+1.5708,0.0,Infinity
+3.1416,-1.0,-1.0

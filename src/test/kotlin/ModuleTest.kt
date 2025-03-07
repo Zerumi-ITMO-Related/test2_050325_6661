@@ -3,8 +3,6 @@ import io.mockk.every
 import io.mockk.mockkStatic
 import io.mockk.verify
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.params.ParameterizedTest
-import org.junit.jupiter.params.provider.CsvFileSource
 import kotlin.math.PI
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
@@ -28,11 +26,11 @@ class ModuleTest {
     @Test
     fun `test cos should pass integration with sin`() {
         mockkStatic(::sin)
-        every { sin(0.0) } returns 0.0
+        every { sin(PI / 2) } returns 1.0
 
-        assertEquals(1.0, cos(0.0))
+        assertEquals(1.0, cos(0.0), 1e-4)
 
-        verify { sin(0.0) }
+        verify { sin(PI / 2) }
     }
 
     @Test

@@ -1,0 +1,4 @@
+input,sinValue,expected
+1.5708,1.0,1.0
+3.1416,0.0,Infinity
+4.7124,-1.0,-1.0

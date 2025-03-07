@@ -1,0 +1,4 @@
+input,tanValue,expected
+0.7854,1.0,1.0
+1.5708,Infinity,0.0
+3.1416,0.0,Infinity
